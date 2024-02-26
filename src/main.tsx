@@ -3,12 +3,14 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './styles/index.css';
 
 import LoginForm from './components/login/Login';
+import SignupForm from './components/signup/Signup';
 
 const App = () => {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/login" element={<LoginForm />} />
+        <Route path="/signup" element={<SignupForm />} />
       </Routes>
     </BrowserRouter>
   );
