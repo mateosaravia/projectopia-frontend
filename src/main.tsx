@@ -2,8 +2,8 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './styles/index.css';
 
-import LoginForm from './components/login/Login';
-import SignupForm from './components/signup/Signup';
+import LoginForm from './pages/Auth/login/components/LoginForm';
+import SignupForm from './pages/Auth/signup/components/SignupForm';
 
 const App = () => {
   return (
