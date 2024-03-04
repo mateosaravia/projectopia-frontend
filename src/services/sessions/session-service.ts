@@ -1,12 +1,11 @@
 import axiosClient from '../../common/utils/axios-client';
 
-export const postLogin = async (email: string, username: string, password: string) => {
+export const postLogin = async (email: string, password: string) => {
   return await axiosClient
     .post(
       '/login',
       JSON.stringify({
         email,
-        username,
         password,
       }),
       {

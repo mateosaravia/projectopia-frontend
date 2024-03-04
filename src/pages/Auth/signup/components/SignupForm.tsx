@@ -1,16 +1,20 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import useAuth from '../../login/hooks/useAuth';
 
 const SignupForm = () => {
   const [formData, setFormData] = useState({ email: '', username: '', password: '' });
+  const { auth, setAuth } = useAuth();
 
-  const handleLogin = () => {};
+  const handleSignUp = (e: any) => {
+    e.preventDefault();
+  };
 
   return (
     <div className="mx-auto flex flex-col items-center justify-center bg-gradient-to-b from-primary-950 to-primary-800 px-6 py-8 md:h-screen lg:py-0">
       <div className="w-full rounded-lg bg-primary-400 shadow-2xl sm:max-w-md md:mt-0 xl:p-0">
         <div className="space-y-4 p-6 sm:p-8 md:space-y-6">
           <h1 className="text-3xl font-semibold text-primary-900">Sign up</h1>
-          <form onSubmit={handleLogin} className="space-y-2 md:space-y-4">
+          <form onSubmit={handleSignUp} className="space-y-2 md:space-y-4">
             <div>
               <label className="mb-20 text-lg font-medium text-primary-900">Email</label>
               <input

@@ -1,17 +1,16 @@
 import ReactDOM from 'react-dom';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import './styles/index.css';
+import { BrowserRouter } from 'react-router-dom';
+import { AuthProvider } from './common/components/AuthProvider';
+import Router from './common/components/Router';
 
-import LoginForm from './pages/Auth/login/components/LoginForm';
-import SignupForm from './pages/Auth/signup/components/SignupForm';
+import './styles/index.css';
 
 const App = () => {
   return (
     <BrowserRouter>
-      <Routes>
-        <Route path="/login" element={<LoginForm />} />
-        <Route path="/signup" element={<SignupForm />} />
-      </Routes>
+      <AuthProvider>
+        <Router />
+      </AuthProvider>
     </BrowserRouter>
   );
 };
