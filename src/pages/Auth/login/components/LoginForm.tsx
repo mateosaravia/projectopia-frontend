@@ -8,7 +8,7 @@ const LoginForm = () => {
   const [error, setError] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
 
-  const { isAuthenticated, role, logIn } = useAuth();
+  const { isAuthenticated, logIn } = useAuth();
 
   const handleLogin = async (e: any) => {
     console.log('loginData', loginData);

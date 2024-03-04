@@ -3,7 +3,6 @@ import useAuth from '../../login/hooks/useAuth';
 
 const SignupForm = () => {
   const [formData, setFormData] = useState({ email: '', username: '', password: '' });
-  const { auth, setAuth } = useAuth();
 
   const handleSignUp = (e: any) => {
     e.preventDefault();
