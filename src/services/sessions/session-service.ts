@@ -1,4 +1,4 @@
-import axiosClient from '../../common/utils/axios-client';
+import axiosClient from '../../utils/axios-client';
 
 export const postLogin = async (email: string, password: string) => {
   return await axiosClient

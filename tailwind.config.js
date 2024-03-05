@@ -3,6 +3,15 @@ module.exports = {
   content: ['./src/**/*.{ts,tsx,html}'],
   theme: {
     extend: {
+      animation: {
+        scroll: 'scroll 20s linear infinite',
+      },
+      keyframes: {
+        scroll: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-100%)' },
+        },
+      },
       colors: {
         primary: {
           50: '#f7f3ff',

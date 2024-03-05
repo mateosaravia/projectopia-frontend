@@ -1,7 +1,7 @@
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
-import { AuthProvider } from './common/components/AuthProvider';
-import Router from './common/components/Router';
+import { AuthProvider } from './common/contexts/AuthProvider';
+import Router from './common/router/Router';
 
 import './styles/index.css';
 
