@@ -2,7 +2,7 @@ import FeatureCard from './FeatureCard';
 
 const FeatureLayout = ({}) => {
   return (
-    <div className="grid w-full grid-cols-2 gap-10">
+    <div className="grid w-full gap-10 sm:grid-cols-1 md:grid-cols-2">
       <div>
         <FeatureCard
           header="5m"
