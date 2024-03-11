@@ -26,7 +26,7 @@ const HomeLayout = () => {
       <div className="fixed top-0 z-10 w-full">
         <Header />
       </div>
-      <div className="relative mx-auto mt-48 flex h-auto w-2/3 flex-grow flex-col items-center justify-center space-y-16 overflow-y-auto overflow-x-hidden px-1 py-8 md:space-y-40 md:px-6">
+      <div className="relative mx-auto mt-24 flex h-auto w-2/3 flex-grow flex-col items-center justify-center space-y-16 overflow-y-auto overflow-x-hidden px-1 py-8 md:mt-48 md:space-y-40 md:px-6">
         <div className="flex h-full w-full flex-col items-center justify-center">
           <h1 className="font-mono text-3xl font-bold text-tertiary-300 md:text-7xl">PROJECTOPIA</h1>
           <p className="font-mono text-xl text-tertiary-300">Page Description</p>
