@@ -30,7 +30,7 @@ const LoginForm = () => {
   }, [isAuthenticated]);
 
   return (
-    <div className="mx-auto flex flex-col items-center justify-center bg-gradient-to-b from-primary-950 to-primary-800 px-6 py-8 md:h-screen lg:py-0">
+    <div className="mx-auto flex flex-col items-center justify-center px-6 py-8 md:h-screen lg:py-0">
       <a className="mb-16 text-4xl font-bold text-tertiary-400">PROJECTOPIA</a>
       <div className="w-full rounded-lg bg-gradient-to-br from-primary-950 to-transparent shadow-lg shadow-black sm:max-w-md md:mt-0 xl:p-0">
         <div className="space-y-4 p-6 sm:p-8 md:space-y-6">
